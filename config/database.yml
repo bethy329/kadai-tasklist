@@ -53,4 +53,4 @@ production:
   pool: 5
   database: kadai-tasklist_development
   username: root
-  password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
+  password: 
