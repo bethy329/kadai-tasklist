@@ -2,8 +2,7 @@ class TasksController < ApplicationController
   before_action :require_user_logged_in
   before_action :correct_user, only: [:edit, :show, :update, :destroy]
   def index
-    redirect_to root_url
-    #@tasks = Task.all.page(params[:page]).per(3)
+    @tasks = current_user.tasks.order('created_at DESC').page(params[:page])
   end
   
   def show

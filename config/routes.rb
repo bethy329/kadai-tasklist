@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
  
- 
- 
   delete 'tasks/destroy'
 
   root to: 'toppages#index'
